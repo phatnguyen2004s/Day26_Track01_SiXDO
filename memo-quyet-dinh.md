@@ -1,6 +1,8 @@
 # Memo quyết định: Trợ lý AI tra cứu tài liệu nội bộ
 
-**Tác giả:** ⏳ (bài cá nhân) · **Ngày:** 14/10/2026 · **Người nhận:** Sponsor (quản lý vận hành) ⏳ · **Chi tiết:** [dashboard-hanh-dong-ai-v2.md](dashboard-hanh-dong-ai-v2.md)
+**Tác giả:** Nguyễn Tiến Phát (MHV 2A202602387) · **Ngày:** 14/10/2026 · **Người nhận:** Sponsor (quản lý vận hành) · **Chi tiết:** [dashboard-hanh-dong-ai-v2.md](dashboard-hanh-dong-ai-v2.md)
+
+> Bài tập dựa trên ví dụ xuyên suốt của đề; chưa có số đo thật. Mốc đầu là cách đo sẽ làm ở tuần 1 của pilot.
 
 ## Quyết định: SỬA
 
@@ -35,7 +37,7 @@ Ba thay đổi bắt buộc: **nguồn kiểm chứng** (nguồn + ngày cập n
 
 | Chỉ số | Loại | Mốc đầu | Mục tiêu *(đề xuất)* | Nguồn · Phụ trách | Khi xấu |
 | --- | --- | --- | --- | --- | --- |
-| Tỷ lệ câu trả lời có nguồn kiểm chứng được (P1) | Product | Phiếu bằng chứng: chấm 20 câu hỏi thật | ≥ 90% | Phiếu chấm mẫu · Chủ quy trình (vai QA) | < 80% hai tuần liền: dừng mở rộng, sửa trong 5 ngày làm việc |
+| Tỷ lệ câu trả lời có nguồn kiểm chứng được (P1) | Product | Tuần 1: chấm 20 câu hỏi theo phiếu đo mốc đầu | ≥ 90% | Phiếu chấm mẫu · Chủ quy trình (vai QA) | < 80% hai tuần liền: dừng mở rộng, sửa trong 5 ngày làm việc |
 | Tỷ lệ trả lời đúng và đúng phiên bản (P2) | Product | Cùng 20 câu | ≥ 90% | Phiếu chấm mẫu · Chủ quy trình (vai QA) | Lỗi sai nghiêm trọng: ẩn tài liệu đó ngay, sửa trong 2 ngày làm việc |
 | Thời gian một lượt tra cứu, median (W1) | Workflow | Bấm giờ cặp 10 câu: thủ công vs qua trợ lý | Giảm ≥ 30% | Phiếu bấm giờ · Chủ quy trình | Không giảm sau 4 tuần: quan sát 5 lượt, sửa cách làm |
 | Tỷ lệ lượt phải quay lại tìm thủ công hoặc hỏi người (W2) | Workflow | Phiếu, 20 câu | Giảm ≥ 15 điểm % | Phiếu · Chủ quy trình | Không giảm: bắt buộc mở nguồn, chấm 100% mẫu trong tuần |
@@ -49,7 +51,11 @@ Chưa đo được, cần dữ liệu khi triển khai thật và **chưa đặt
 3. **Đối chứng và số liệu đo được:** thay thời gian tự khai bằng median từ bấm giờ hoặc log, so với cách thủ công (đo một mình) hoặc ca đối chứng (khi triển khai thật).
 4. **TO-BE đổi cách chia việc:** thêm chia việc người–AI (Mollick) và chuỗi tin cậy có owner, thay vì chỉ chèn bước "hỏi AI".
 
-*Lưu ý: bốn thay đổi trên đến từ phản biện theo bốn trục của đề; góp ý của người phản biện thật điền ở mục 7.3 của dashboard.*
+5. **Tiêu chí hoàn thành từng quy trình** *(từ phản biện)*: làm rõ "tóm tắt" áp dụng cho tài liệu nào và thế nào là xong.
+6. **Gartner-Lite chỉ là readiness** *(từ phản biện)*: hai nguyên nhân gốc là giả thuyết có case ủng hộ, chờ phép thử xác nhận.
+7. **B1 lên Gate 1** *(từ phản biện)*: mốc đầu B1 và quyền dữ liệu phải có từ ngày 30; thiếu thì Sponsor quyết định ngay.
+
+*Thay đổi 1–4 từ tự phản biện theo bốn trục của đề; 5–7 từ góp ý của người phản biện (mục 7.3 của dashboard).*
 
 ## Quy tắc tại ngày 90
 
@@ -60,5 +66,5 @@ Chưa đo được, cần dữ liệu khi triển khai thật và **chưa đặt
 ## Cần từ Sponsor
 
 1. Chỉ định **data owner** cho từng tài liệu trong phạm vi và **Phụ trách AI**.
-2. Cho phép truy cập **log tác vụ, log QA và dữ liệu nghiệp vụ** (để đo B1, W3, P3), và cho một ca làm **nhóm đối chứng**.
-3. Xác nhận ngân sách và người vận hành cho giai đoạn 0–30. ⏳
+2. Cho phép truy cập **log tác vụ, log QA và dữ liệu nghiệp vụ** (để đo B1, W3, P3) **trước Gate 1 (ngày 30)**, và cho một ca làm **nhóm đối chứng**.
+3. Xác nhận ngân sách và người vận hành cho giai đoạn 0–30.
