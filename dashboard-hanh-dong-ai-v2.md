@@ -1,11 +1,11 @@
 # Dashboard hành động cho áp dụng AI — v2
 
-**Sản phẩm:** Trợ lý AI tra cứu tài liệu nội bộ · **Nhóm:** ⏳ *(điền tên nhóm)* · **Ngày:** 14/10/2026
+**Sản phẩm:** Trợ lý AI tra cứu tài liệu nội bộ · **Tác giả:** ⏳ *(điền họ tên; bài cá nhân)* · **Ngày:** 14/10/2026
 
 > **Cách đọc file này**
-> - Tình huống nền là *ví dụ xuyên suốt của đề* (minh hoạ, không phải số liệu của một doanh nghiệp cụ thể). Nhóm phải đối chiếu với tình huống thật của mình ở mọi ô có dấu ⏳.
-> - **Không có số đo thực nào trong file.** Mọi "mốc đầu" là *cách đo + thời điểm đo*, không phải con số. Mọi mục tiêu ghi **(đề xuất)** là giá trị khởi điểm, nhóm xác nhận sau khi có mốc đầu.
-> - ⏳ = nhóm điền hoặc xác nhận bằng dữ liệu thật trước khi nộp. Danh sách việc còn lại ở mục 10.
+> - Tình huống nền là *ví dụ xuyên suốt của đề* (minh hoạ, không phải số liệu của một doanh nghiệp cụ thể). Tác giả cần đối chiếu với tình huống thật của mình ở mọi ô có dấu ⏳.
+> - **Không có số đo thực nào trong file.** Mọi "mốc đầu" là *cách đo + thời điểm đo*, không phải con số. Mọi mục tiêu ghi **(đề xuất)** là giá trị khởi điểm, tác giả xác nhận sau khi có mốc đầu.
+> - ⏳ = tác giả điền hoặc xác nhận bằng dữ liệu thật trước khi nộp. Danh sách việc còn lại ở mục 10.
 
 ---
 
@@ -80,7 +80,7 @@ Triệu chứng là "ít người quay lại dùng". Hỏi tiếp *ít dùng vì
 | | Nguyên nhân gốc | Framework | Bằng chứng |
 | --- | --- | --- | --- |
 | **RC1** | **Độ tin cậy:** câu trả lời không có nguồn và ngày cập nhật; không có QA mẫu, không có cách báo lỗi, nên người dùng không có cơ sở để tin | 5 câu hỏi (Tin cậy) · ADKAR (Desire) · Gartner-Lite (Readiness: dữ liệu) | **Case:** Morgan Stanley (xem 3.5). **Hiện trường ⏳:** phép thử 20 câu hỏi thật (3.5) |
-| **RC2** | **Workflow và chia việc:** trợ lý không nằm trong bước tra cứu chính thức; chưa nói rõ ai kiểm chứng, ai chịu trách nhiệm, chuyển người ở đâu khi AI không chắc | 5 câu hỏi (Workflow) · Mollick (chia việc) · Gartner-Lite (Absorption: owner) | **Case:** Klarna (xem 3.5). **Hiện trường ⏳:** quan sát 10 lượt tra cứu (3.5) |
+| **RC2** | **Workflow và chia việc:** trợ lý không nằm trong bước tra cứu chính thức; chưa nói rõ ai kiểm chứng, ai chịu trách nhiệm, chuyển người ở đâu khi AI không chắc | 5 câu hỏi (Workflow) · Mollick (chia việc) · Gartner-Lite (Absorption: owner) | **Case:** Klarna (xem 3.5). **Hiện trường ⏳:** tự quan sát hành vi (phiếu phần B, 3.5) |
 
 *Đo lường* và *Con người* được ghi là nguyên nhân liên quan, không phải gốc: đo sai khiến không thấy vấn đề, nhưng không gây ra vấn đề.
 
@@ -92,15 +92,15 @@ Triệu chứng là "ít người quay lại dùng". Hỏi tiếp *ít dùng vì
 - **Klarna → RC2.** Công ty từng công bố trợ lý AI làm việc của khoảng 700 nhân viên; năm 2025 CEO nói chi phí đã được đặt nặng quá mức, dẫn tới chất lượng thấp hơn, và tuyển lại nhân viên để khách luôn tìm được người thật. *Bài học: khối lượng tự động hoá không thay thế chất lượng và đường chuyển sang người.*
 - **DWP / GDS → thiết kế chỉ số (mục 6).** Đánh giá của DWP có nhóm so sánh (người dùng vs không dùng) ra mức tiết kiệm khiêm tốn hơn con số tự khai của nghiên cứu GDS không có nhóm so sánh. *Bài học: nhóm đối chứng đáng tin hơn tự khai.*
 
-**Bằng chứng hiện trường ⏳** *(nhóm thu thập trước checkpoint phút 40; mỗi mục có điều kiện bác bỏ để khỏi chọn bằng chứng theo ý mình)*:
+**Bằng chứng hiện trường ⏳** *(tác giả thu thập trước checkpoint phút 40; mỗi mục có điều kiện bác bỏ để khỏi chọn bằng chứng theo ý mình)*:
 
 | Phép thử | Cách làm | Nếu kết quả là... thì... |
 | --- | --- | --- |
-| **Thử 20 câu hỏi thật** (RC1) | Lấy 20 câu nhân viên hay hỏi, chạy qua trợ lý, chấm: có nguồn? có ngày? đúng và còn hiệu lực? | Phần lớn **đã có nguồn và đúng** mà vẫn ít dùng → RC1 sai, chuyển sang Awareness/Desire |
-| **Quan sát 10 lượt tra cứu** (RC2) | Ngồi cạnh 10 lượt tra cứu thật: người dùng mở trợ lý ở bước nào, hay bỏ qua? Lỗi thì làm gì? | Hầu hết lượt **có mở trợ lý trong quy trình** → RC2 sai |
-| **Phỏng vấn 3–5 người** (RC1, ADKAR) | 3 câu: *Lần gần nhất bạn không dùng trợ lý là khi nào, vì sao? · Bạn biết nó đúng bằng cách nào? · Sai thì báo ai?* | Lý do chính là "không biết dùng" → quay lại Knowledge/Ability |
+| **Thử 20 câu hỏi thật** (RC1) | Phiếu phần A: lấy 20 câu hay hỏi, chạy qua trợ lý, chấm: có nguồn? có ngày? đúng và còn hiệu lực? | P1 và P2 đều ≥ 90% mà người dùng vẫn ít dùng → RC1 yếu, chuyển sang Awareness/Desire |
+| **Tự quan sát hành vi** (RC2, ADKAR) | Phiếu phần B: tự ghi mở trợ lý ở bước nào, sau khi nhận câu trả lời làm gì, lý do lần gần nhất không dùng | Chủ yếu **mở trợ lý ngay từ đầu trong quy trình** → RC2 yếu |
+| *Phỏng vấn 3–5 người* (tuỳ chọn) | 3 câu: *Lần gần nhất bạn không dùng trợ lý là khi nào, vì sao? · Bạn biết nó đúng bằng cách nào? · Sai thì báo ai?* | Lý do chính là "không biết dùng" → quay lại Knowledge/Ability |
 
-Ghi kết quả vào đây: ⏳ *(ngày, số mẫu, kết quả, người ghi)*
+Phiếu ghi sẵn: [phieu-bang-chung.md](phieu-bang-chung.md) (kèm cách đọc kết quả). Ghi kết quả vào đây: ⏳ *(ngày, số mẫu, kết quả, người ghi)*
 
 ---
 
@@ -137,7 +137,7 @@ Ghi kết quả vào đây: ⏳ *(ngày, số mẫu, kết quả, người ghi)*
 | --- | --- | --- | --- |
 | Nguồn | Kiểm kê tài liệu trong phạm vi; mỗi tài liệu có data owner và lịch cập nhật | Data owner | Không tài liệu nào thiếu owner |
 | Trích nguồn | Câu trả lời hiện tên tài liệu, trang/mục, ngày cập nhật | Phụ trách AI | Nguồn mở được từ câu trả lời |
-| QA mẫu | Bộ câu hỏi vàng chạy định kỳ + chấm mẫu hằng tuần bởi 2 người độc lập | Phụ trách QA | Có báo cáo tuần |
+| QA mẫu | Bộ câu hỏi vàng chạy định kỳ + chấm mẫu hằng tuần bởi 2 người độc lập | Chủ quy trình (vai QA) | Có báo cáo tuần |
 | Chuyển người | Quy tắc "chưa chắc → chuyển data owner / trưởng ca" | Chủ quy trình | Mọi ca chưa chắc đều có người nhận |
 | Phản hồi | Nút báo lỗi, SLA xử lý, báo cáo tuần các lỗi đã sửa | Phụ trách AI | Lỗi được xử lý đúng hạn và người báo được biết kết quả |
 
@@ -151,52 +151,71 @@ Mỗi giai đoạn là một cổng quyết định. **Gate mở khi chất lư�
 
 | Giai đoạn | Owner | Việc chính | Dấu hiệu hoàn thành (điều kiện qua gate) |
 | --- | --- | --- | --- |
-| **Ngày 0–30: Nền tin cậy** | **Phụ trách AI** (chung với Data owner) | Khoá phạm vi; kiểm kê nguồn và gán data owner; bật trích nguồn + ngày; dựng bộ câu hỏi vàng; mở kênh báo lỗi; **đo mốc đầu tuần 1** | **Gate 1:** P4 = 100% tài liệu có owner và lịch cập nhật · có mốc đầu đủ cho P1, P2, W1, W2, B1 · kênh báo lỗi hoạt động · ≥1 vòng QA mẫu hoàn tất · Sponsor ký |
-| **Ngày 31–60: Pilot trong workflow** | **Chủ quy trình** (trưởng ca vận hành) | Đưa bước chuẩn vào SOP của Q1–Q3; chạy pilot ở 1 ca/nhóm, giữ 1 nhóm đối chứng; hướng dẫn tại ca (ADKAR); QA mẫu hằng tuần; xử lý lỗi theo SLA | **Gate 2:** P1, P2 đạt mục tiêu · W3 đạt mục tiêu · W1 giảm so với mốc đầu **và** so với nhóm đối chứng · W2 và B1 không xấu đi |
-| **Ngày 61–90: Đo giá trị và quyết định** | **Sponsor** (quản lý vận hành) cùng **Chủ nghiệp vụ** | Duy trì pilot, so sánh với nhóm đối chứng, đánh giá kết quả nghiệp vụ và chi phí vận hành | **Quyết định:** tiếp tục mở rộng / sửa / dừng, theo quy tắc ở mục 8 |
+| **Ngày 0–30: Nền tin cậy** | **Phụ trách AI** (cùng Data owner) | Khoá phạm vi; kiểm kê nguồn và gán data owner; bật trích nguồn + ngày; dựng bộ câu hỏi vàng; mở kênh báo lỗi; **đo mốc đầu bằng [phiếu bằng chứng](phieu-bang-chung.md)** | **Gate 1:** kiểm kê xong, mọi tài liệu trong phạm vi có owner và lịch cập nhật · mốc đầu P1, P2, W1, W2 đã đo và ghi · kênh báo lỗi hoạt động · ≥1 vòng chấm mẫu hoàn tất · Sponsor ký |
+| **Ngày 31–60: Pilot trong workflow** | **Chủ quy trình** | Đưa bước chuẩn vào SOP của Q1–Q3; chạy pilot ở 1 ca, giữ 1 ca đối chứng nếu có; hướng dẫn tại ca (ADKAR); chấm mẫu hằng tuần; xử lý lỗi theo hạn | **Gate 2:** P1, P2 đạt mục tiêu · W2 giảm so với mốc đầu · W1 giảm so với mốc đầu (và so với ca đối chứng nếu có) · không còn lỗi sai nghiêm trọng chưa xử lý |
+| **Ngày 61–90: Đo giá trị và quyết định** | **Sponsor** (kèm Chủ quy trình) | Duy trì pilot; thu thêm các chỉ số cần dữ liệu thật (6B), nhất là kết quả nghiệp vụ; đánh giá chi phí vận hành | **Quyết định:** tiếp tục mở rộng / sửa / dừng, theo quy tắc ở mục 8 |
 
-**Người đảm nhận từng vai trò:** Sponsor ⏳ · Phụ trách AI ⏳ · Data owner ⏳ · Chủ quy trình ⏳ · Phụ trách QA ⏳ · Chủ nghiệp vụ ⏳ · Trưởng nhóm ⏳
+**Bốn vai trò** *(gộp cho pilot nhỏ, chưa gán tên)*:
+
+| Vai trò | Phụ trách |
+| --- | --- |
+| **Sponsor** | Quản lý vận hành: ký gate, nhận memo, cấp quyền truy cập log và ngân sách |
+| **Phụ trách AI** | Chất lượng trợ lý, trích nguồn, kênh báo lỗi |
+| **Data owner** | Nguồn tài liệu, lịch cập nhật, sửa tài liệu bị báo lỗi |
+| **Chủ quy trình** | Trưởng ca vận hành: SOP Q1–Q3, hành vi của ca, **chấm mẫu (QA)** và kết quả nghiệp vụ |
+
+> **Rủi ro cần ghi:** Chủ quy trình vừa vận hành vừa chấm mẫu nên dễ thiên vị. Khi triển khai thật, chấm mẫu cần 2 người độc lập, một người ngoài ca.
 
 ---
 
 ## 6. Dashboard chỉ số (v2)
 
-Theo dõi từ dưới lên, **ra quyết định dựa trên tầng 4–5**. Chỉ số có hai mức: **Product** (cả sản phẩm) và **Workflow** (từng quy trình).
+Theo dõi từ dưới lên, **ra quyết định dựa trên tầng 4–5**. Chỉ số có hai mức: **Product** (cả sản phẩm) và **Workflow** (từng quy trình). Vì bài làm cá nhân và chỉ có dữ liệu tự đo, bộ chỉ số chia hai phần: 6A đo được ngay, 6B chỉ đo được khi triển khai thật (**chưa đặt mục tiêu**, theo quy tắc "không đặt mục tiêu cho chỉ số không lấy được số").
+
+### 6A. Đo được ngay bằng phiếu bằng chứng
 
 | # | Chỉ số *(loại · tầng)* | Mốc đầu | Mục tiêu *(đề xuất)* | Nguồn dữ liệu | Phụ trách | Khi xấu → hành động |
 | --- | --- | --- | --- | --- | --- | --- |
-| **P1** | **Tỷ lệ câu trả lời có nguồn kiểm chứng được** (có nguồn, mở được, còn hiệu lực) · *Product · tầng 4* | Tuần 1: chấm 30 câu hỏi vàng + 30 câu ngẫu nhiên từ log | ≥ 90% tại Gate 2 | Bộ câu hỏi vàng + chấm mẫu hằng tuần (2 người chấm độc lập) | Phụ trách QA | **< 80% hai tuần liền** → dừng mở thêm người dùng; Phụ trách AI lập 10 lỗi hàng đầu và sửa nguồn/truy xuất trong 5 ngày làm việc; tăng gấp đôi cỡ mẫu chấm |
-| **P2** | **Tỷ lệ trả lời đúng và đúng phiên bản** theo chấm mẫu · *Product · tầng 4* | Cùng mẫu tuần 1 | ≥ 90% tại Gate 2 | Chấm mẫu hằng tuần | Phụ trách QA | **Có lỗi sai nghiêm trọng** (dẫn tới xử lý sai ca) → ẩn tài liệu đó khỏi trợ lý ngay, data owner sửa trong 2 ngày làm việc, báo trưởng ca |
-| **P3** | **Tỷ lệ báo lỗi được xử lý trong SLA** (3 ngày làm việc) · *Product · rủi ro/bàn giao* | Chưa có kênh → đo từ tuần 2 | ≥ 90% | Log báo lỗi | Phụ trách AI | **< 70%** → leo thang Sponsor; bổ sung người xử lý hoặc thu hẹp phạm vi tài liệu |
-| **P4** | **Tỷ lệ tài liệu có owner và lịch cập nhật còn hạn** · *Product · readiness* | Tuần 1: kiểm kê toàn bộ tài liệu trong phạm vi | 100% tại Gate 1 | Bảng kiểm kê nguồn | Data owner | **Tài liệu không có owner** → loại khỏi nguồn truy xuất cho tới khi có owner |
-| **W1** | **Thời gian hoàn thành một lượt tra cứu** (median, phút) · *Workflow Q1 · tầng 3* | Tuần 1: log tác vụ + bấm giờ 20 lượt thật | Giảm so với mốc đầu và so với nhóm đối chứng; mức giảm ≥ 30% | Log tác vụ (thời điểm mở và đóng lượt tra cứu) | Chủ quy trình | **Không giảm sau 4 tuần pilot, hoặc giảm nhưng W2 xấu** → xem lại cách làm: quan sát 5 lượt, tìm bước nghẽn (truy xuất chậm hay kiểm chứng rườm) |
-| **W2** | **Tỷ lệ lượt hoàn thành không phải làm lại** (không bị QA/trưởng ca trả về, không phải hỏi lại đồng nghiệp) · *Workflow Q1+Q2 · tầng 4* | Tuần 1: mẫu hồ sơ ca | Tăng 15 điểm % so với mốc đầu | Log QA rework / ticket mở lại | Phụ trách QA | **Làm lại tăng** → siết kiểm soát: bắt buộc mở nguồn trước khi dùng cho việc có tác động; QA 100% mẫu trong tuần đó |
-| **W3** | **Tỷ lệ lượt đi đúng bước chuẩn** (hỏi AI → mở nguồn → xác nhận hoặc báo lỗi) · *Workflow Q1–Q3 · tầng 2* | Bước chưa tồn tại; ghi từ khi pilot bắt đầu | ≥ 70% tại Gate 2 | Log quy trình (trường "đã mở nguồn", "đã xác nhận") | Trưởng nhóm | **< 50% sau 2 tuần** → tìm điểm vướng: hỏi 3 người bỏ bước, sửa giao diện/quy trình; chạy lại ADKAR cho Desire và Ability |
-| **B1** | **Kết quả nghiệp vụ:** tỷ lệ ca xử lý đúng quy định lần đầu *(hoặc số lỗi do dùng tài liệu sai/lỗi thời)* · *Business · tầng 5* | Tuần 1–2: lấy từ hệ thống nghiệp vụ/audit | Cải thiện so với nhóm đối chứng; **không được xấu đi** | Hệ thống nghiệp vụ / audit | Chủ nghiệp vụ | **Nhóm pilot xấu hơn đối chứng** → thu hẹp phạm vi (bỏ quy trình rủi ro), sửa; **dừng** nếu hai vòng sửa không đảo ngược |
+| **P1** | **Tỷ lệ câu trả lời có nguồn kiểm chứng được** (có nguồn, mở được, còn hiệu lực) · *Product · tầng 4* | Phần C phiếu: chấm 20 câu hỏi thật | ≥ 90% tại Gate 2 | Phiếu chấm mẫu; về sau bộ câu hỏi vàng + chấm hằng tuần | Chủ quy trình (vai QA) | **< 80% hai tuần liền** → dừng mở thêm người dùng; Phụ trách AI lập 10 lỗi hàng đầu, sửa nguồn/truy xuất trong 5 ngày làm việc; tăng gấp đôi cỡ mẫu chấm |
+| **P2** | **Tỷ lệ trả lời đúng và đúng phiên bản** · *Product · tầng 4* | Cùng 20 câu | ≥ 90% tại Gate 2 | Phiếu chấm mẫu | Chủ quy trình (vai QA) | **Có lỗi sai nghiêm trọng** (dẫn tới xử lý sai ca) → ẩn tài liệu đó khỏi trợ lý ngay; Data owner sửa trong 2 ngày làm việc; báo Sponsor |
+| **W1** | **Thời gian hoàn thành một lượt tra cứu** (median, giây; cách mới gồm cả bước mở nguồn) · *Workflow Q1 · tầng 3* | Phiếu: bấm giờ cặp 10 câu, cách thủ công vs qua trợ lý | Giảm ≥ 30% so với cách thủ công (và so với ca đối chứng khi có) | Phiếu bấm giờ; về sau log tác vụ | Chủ quy trình | **Không giảm sau 4 tuần pilot, hoặc giảm nhưng W2 xấu** → xem lại cách làm: quan sát 5 lượt, tìm bước nghẽn (truy xuất chậm hay kiểm chứng rườm) |
+| **W2** | **Tỷ lệ lượt phải quay lại tìm thủ công hoặc hỏi người sau khi hỏi trợ lý** · *Workflow Q1–Q2 · tầng 4* | Phiếu: cột "Phải tìm lại hoặc hỏi người", 20 câu | Giảm ≥ 15 điểm % so với mốc đầu | Phiếu; về sau log QA / ticket mở lại | Chủ quy trình | **Không giảm hoặc tăng** → siết kiểm soát: bắt buộc mở nguồn trước khi dùng cho việc có tác động; chấm 100% mẫu trong tuần đó; xem lại P1, P2 |
+
+W2 đo thẳng vào vấn đề quan sát được ("vẫn quay lại tìm file thủ công"), nên nó là chỉ số thay cho "tỷ lệ làm lại" của bản v1 khi chưa có log QA.
+
+### 6B. Chỉ đo được khi triển khai thật *(chưa có dữ liệu, chưa đặt mục tiêu)*
+
+| # | Chỉ số *(loại · tầng)* | Cần dữ liệu gì | Phụ trách | Hành động dự kiến khi xấu |
+| --- | --- | --- | --- | --- |
+| **W3** | Tỷ lệ lượt đi đúng bước chuẩn: hỏi AI → mở nguồn → xác nhận hoặc báo lỗi · *Workflow · tầng 2* | Log quy trình ("đã mở nguồn", "đã xác nhận") | Chủ quy trình | Hỏi 3 người bỏ bước, sửa giao diện/quy trình, chạy lại ADKAR cho Desire và Ability |
+| **P3** | Tỷ lệ báo lỗi được xử lý trong hạn (3 ngày làm việc) · *Product · rủi ro/bàn giao* | Log báo lỗi (cần kênh báo lỗi đã mở ở Gate 1) | Phụ trách AI | Leo thang Sponsor; thêm người xử lý hoặc thu hẹp phạm vi tài liệu |
+| **B1** | **Kết quả nghiệp vụ:** tỷ lệ ca xử lý đúng quy định lần đầu *(hoặc số lỗi do dùng tài liệu sai/lỗi thời)* · *Business · tầng 5* | Hệ thống nghiệp vụ / audit, so với ca đối chứng | Chủ quy trình | Thu hẹp phạm vi (bỏ quy trình rủi ro) rồi sửa; **dừng** nếu hai vòng sửa không đảo ngược |
+
+> **Hệ quả bắt buộc:** B1 là chỉ số giá trị duy nhất. Khi chưa có B1, dashboard chỉ chứng minh được đến tầng 4, nên quyết định cao nhất có thể ra lúc này là **SỬA**, chưa thể là "tiếp tục mở rộng" (mục 8).
 
 **Chỉ số theo dõi nhưng không dùng để quyết định:**
 
 | Chỉ số | Vì sao chỉ làm bối cảnh |
 | --- | --- |
-| Số tài khoản đăng nhập, số câu hỏi | Đo hoạt động, không đo giá trị; tăng được mà chất lượng không đổi |
-| Thời gian tiết kiệm **tự khai** | Dùng để đối chiếu với W1 từ log, không thay W1 |
-| **U1** Tỷ lệ lượt tra cứu trong Q1–Q3 có dùng trợ lý | Cho biết có đi vào quy trình không; **không** là điều kiện qua gate vì tăng U1 khi P1, P2 thấp chỉ làm tăng câu trả lời không đáng tin |
+| Số tài khoản đăng nhập, số câu hỏi, tỷ lệ lượt tra cứu có dùng trợ lý | Đo hoạt động, không đo giá trị; tăng được mà chất lượng không đổi, và tăng khi P1, P2 thấp chỉ làm tăng câu trả lời không đáng tin |
+| Thời gian tiết kiệm **tự khai** | Chỉ để đối chiếu với W1 đo bằng bấm giờ hoặc log |
 
 **Thiết kế đo:**
 
-- **Nhóm đối chứng:** một ca hoặc nhóm tương đương không dùng quy trình mới. Số liệu thời gian và kết quả so sánh pilot với đối chứng, không so với niềm tin.
+- **Hiện tại (một người):** đối chứng ngay trong cá nhân: cùng 10 câu làm hai cách, lẻ thủ công trước, chẵn trợ lý trước. Chấm P1, P2, W2 trên 20 câu.
+- **Khi triển khai thật:** một ca hoặc nhóm tương đương không dùng quy trình mới làm nhóm đối chứng; so pilot với đối chứng, không so với niềm tin.
 - **Ước tính thận trọng:** dùng median, bỏ ngoại lệ, báo khoảng chứ không báo một con số đẹp.
-- **Mốc đầu:** đo trong tuần 1, ghi rõ ai đo, mẫu bao nhiêu, đo bằng nguồn nào. Không đặt mục tiêu cho chỉ số mà nhóm không lấy được số.
+- **Mốc đầu:** ghi rõ ai đo, mẫu bao nhiêu, đo bằng nguồn nào. Mốc đầu hiện tại là **một người đo, một người chấm, mẫu nhỏ**: dùng để đặt mục tiêu, không dùng để kết luận cho cả tổ chức.
 
-**Mapping năm tầng:** tầng 1 (U1) · tầng 2 (W3) · tầng 3 (W1) · tầng 4 (P1, P2, W2, P3) · tầng 5 (B1). Nền đáy: P4.
+**Mapping năm tầng:** đo được ngay: tầng 3 (W1), tầng 4 (P1, P2, W2). Cần dữ liệu thật: tầng 2 (W3), tầng 4–bàn giao (P3), tầng 5 (B1). Tầng 1 chỉ là bối cảnh.
 
 ---
 
 ## 7. Kiểm tra chéo: v1 → v2
 
-### 7.1 Dashboard v1 (nộp ở checkpoint phút 80)
+### 7.1 Dashboard v1 (dựng lại từ mẫu 4.5)
 
-Bản v1 là mẫu 4.5 điền cho tình huống này:
+Bản v1 dưới đây được dựng lại bằng cách điền nguyên mẫu 4.5 cho tình huống này; không phải bản đã nộp ở checkpoint phút 80. ⏳ Nếu bạn đã có bản v1 thật, thay vào đây.
 
 | Chỉ số | Mốc đầu | Mục tiêu | Nguồn dữ liệu | Phụ trách | Khi chỉ số xấu |
 | --- | --- | --- | --- | --- | --- |
@@ -210,19 +229,19 @@ Lộ trình v1: 30 ngày triển khai trích nguồn · 60 ngày pilot · 90 ng�
 
 ### 7.2 Góp ý và thay đổi
 
-> **Nguồn các góp ý dưới đây:** phản biện theo bốn trục của mục 4.6 và bảng lỗi thường gặp (5.3) áp lên v1. **Đây chưa phải góp ý của nhóm khác.** Khi đổi nhóm, ghi góp ý thật vào 7.3 và chỉnh lại bảng này nếu khác.
+> **Nguồn các góp ý dưới đây:** phản biện theo bốn trục của mục 4.6 và bảng lỗi thường gặp (5.3) áp lên v1. **Đây chưa phải góp ý của người khác.** Khi nhờ một người ngoài phản biện, ghi góp ý thật vào 7.3 và chỉnh lại bảng này nếu khác.
 
 | # | Trục | Góp ý cụ thể về v1 | Thay đổi trong v2 |
 | --- | --- | --- | --- |
 | 1 | Chỉ số | Cột "Mục tiêu" chỉ ghi "mục tiêu nhóm" và cột "Khi xấu" chỉ là cụm chung ("Tìm điểm vướng", "Tăng kiểm soát"): không nói được **xấu là bao nhiêu và làm gì, trong bao lâu** | Mỗi chỉ số có mục tiêu (đề xuất), ngưỡng kích hoạt, hành động cụ thể, người làm và thời hạn (mục 6) |
-| 2 | Chỉ số | "Mức dùng theo quy trình" đứng đầu bảng và là điều kiện chuyển giai đoạn: thưởng cho việc dùng nhiều dù trả lời chưa đáng tin | Hạ xuống thành chỉ số bối cảnh U1; gate dựa trên tầng 4–5 và hành vi (mục 5, 6) |
-| 3 | Chỉ số | Thời gian xử lý không có nhóm so sánh; "đo hiện trạng" không nói ai đo, mẫu bao nhiêu | Thêm nhóm đối chứng, dùng median từ log, ghi mẫu và người đo; tự khai chỉ để đối chiếu (mục 6) |
+| 2 | Chỉ số | "Mức dùng theo quy trình" đứng đầu bảng và là điều kiện chuyển giai đoạn: thưởng cho việc dùng nhiều dù trả lời chưa đáng tin | Hạ xuống thành chỉ số bối cảnh; gate dựa trên tầng 3–4, và tầng 5 khi triển khai thật (mục 5, 6) |
+| 3 | Chỉ số | Thời gian xử lý không có nhóm so sánh; "đo hiện trạng" không nói ai đo, mẫu bao nhiêu | Thêm đối chứng (cùng câu hỏi làm hai cách khi đo một mình; ca đối chứng khi triển khai thật), dùng median, ghi mẫu và người đo; tự khai chỉ để đối chiếu (mục 6) |
 | 4 | Hành động | Lộ trình chuyển theo ngày, thiếu dấu hiệu hoàn thành và owner mỗi giai đoạn: thành danh sách việc | Mỗi giai đoạn có owner; hai gate theo bằng chứng; giai đoạn 3 kết thúc bằng quyết định (mục 5) |
 | 5 | Framework | TO-BE chỉ chèn bước "hỏi AI", chưa nói ai kiểm chứng, ai chịu trách nhiệm, AI không chắc thì sao | Thêm chia việc Mollick, ba thay đổi bắt buộc và chuỗi tin cậy có owner (mục 4) |
 
-### 7.3 Góp ý thật từ nhóm phản biện ⏳
+### 7.3 Góp ý thật từ người phản biện ⏳
 
-| Nhóm phản biện | Trục | Góp ý | Nhóm có nhận không? | Thay đổi |
+| Người phản biện | Trục | Góp ý | Có nhận không? | Thay đổi |
 | --- | --- | --- | --- | --- |
 | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
 | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
@@ -237,8 +256,8 @@ Lộ trình v1: 30 ngày triển khai trích nguồn · 60 ngày pilot · 90 ng�
 
 | Quyết định | Khi nào |
 | --- | --- |
-| **Tiếp tục / mở rộng** | P1, P2 đạt mục tiêu · W3 đạt mục tiêu · B1 cải thiện so với đối chứng và giữ được 4 tuần · không có lỗi sai nghiêm trọng đang tồn tại |
-| **Sửa** | Tầng 3 đạt nhưng tầng 4 chưa đạt; hoặc đã xác định được nguyên nhân và còn một vòng sửa; hoặc thiếu owner/dữ liệu để đo |
+| **Tiếp tục / mở rộng** | P1, P2 đạt mục tiêu · W2 và W1 đạt mục tiêu · **B1 đã đo** và cải thiện so với ca đối chứng, giữ được 4 tuần · không có lỗi sai nghiêm trọng đang tồn tại. *Chưa có B1 thì không ra quyết định này.* |
+| **Sửa** | Tầng 3 đạt nhưng tầng 4 chưa đạt; hoặc đã xác định được nguyên nhân và còn một vòng sửa; hoặc chưa đo được B1 |
 | **Dừng** | Sau hai vòng sửa, tầng 4 vẫn không đạt; hoặc B1 xấu hơn đối chứng; hoặc chi phí vận hành lớn hơn giá trị đo được |
 
 ---
@@ -248,19 +267,18 @@ Lộ trình v1: 30 ngày triển khai trích nguồn · 60 ngày pilot · 90 ng�
 - [x] 1. **AI đi vào quy trình nào?** Q1 tra cứu · Q2 tóm tắt · Q3 kiểm chứng và báo lỗi (mục 1)
 - [x] 2. **Nguyên nhân gốc nằm ở đâu?** RC1 độ tin cậy · RC2 workflow và chia việc (3.4)
 - [x] 3. **Framework nào giúp trả lời?** Gartner-Lite cho readiness (3.2) · ADKAR cho người dùng (3.3) · Mollick cho chia việc (4.3)
-- [x] 4. **Chỉ số nào chứng minh giá trị?** P1, P2 (tin cậy) · W1, W2 (quy trình) · B1 (nghiệp vụ) (mục 6)
+- [x] 4. **Chỉ số nào chứng minh giá trị?** P1, P2 (tin cậy) · W1, W2 (quy trình) đo được ngay bằng phiếu; B1 (nghiệp vụ) khi triển khai thật (mục 6)
 - [x] 5. **Khi nào tiếp tục, sửa hoặc dừng?** Hiện tại *sửa*; quy tắc ở mục 8
 
 ---
 
 ## 10. Việc còn lại trước khi nộp ⏳
 
-1. **Thay tình huống minh hoạ bằng tình huống thật** của nhóm (từ hoạt động mở đầu hoặc doanh nghiệp của nhóm), hoặc xác nhận tình huống này đúng với trải nghiệm của nhóm. Sửa mục 1–2 và 3.1–3.3 cho khớp.
-2. **Thu bằng chứng hiện trường** (3.5): thử 20 câu hỏi, quan sát 10 lượt, phỏng vấn 3–5 người; ghi kết quả vào ô trống.
-3. **Đo mốc đầu tuần 1** cho P1, P2, W1, W2, B1 và xác nhận lại các mục tiêu (đề xuất) bằng số thật.
-4. **Điền tên người** cho các vai trò ở mục 5 và tên nhóm ở đầu file.
-5. **Đổi nhóm phản biện thật**, ghi vào 7.3, chỉnh lại 7.2 nếu khác.
-6. Kiểm tra chéo với memo: [memo-quyet-dinh.md](memo-quyet-dinh.md).
+1. **Làm [phiếu bằng chứng](phieu-bang-chung.md)** (khoảng 30–45 phút), rồi dán lại phần A, B, C cho tôi. Tôi sẽ điền 3.5 và cột "Mốc đầu" ở mục 6A và kiểm tra hai nguyên nhân gốc có còn đứng vững không.
+2. **Xác nhận tình huống** (mục 1–2, 3.1–3.3) đúng với trải nghiệm thật của bạn. Đề cấm case tưởng tượng; nếu có chỗ không khớp, báo tôi sửa.
+3. **Điền họ tên** ở đầu file và đầu memo, và người nhận memo (Sponsor).
+4. **Nhờ một người ngoài phản biện thật** (đề yêu cầu đổi nhóm ở chặng 3; hỏi giảng viên xem bài cá nhân được ghép với ai), ghi vào 7.3, chỉnh lại 7.2 nếu khác.
+5. **Xác nhận lại các mục tiêu "(đề xuất)"** sau khi có mốc đầu từ phiếu.
 
 ---
 
